@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFT</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      h2 {
+        text-align: left;
+        padding: 10px;
+        font-family: serif;
+        color: rgba(192, 192, 192);
+        float: left;
+        white-space: pre-wrap;
+      }
+    </style>
+</head>
+<body>
+    <div class="grid">
+      <script src="./script.js"></script>
+    </div>
+
+    <div class="cardPool">
+      <div class="desc">
+        <h3>Champions</h3>
+      </div>
+      <div class="gallery_one" id="Diana" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Diana.png" alt="Diana" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Elise" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Elise.png" alt="Elise" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Fiora" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Fiora.png" alt="Fiora" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Garen" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Garen.png" alt="Garen" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Lissandra" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank" >
+          <img src="Lissandra.png" alt="Lissandra" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Maokai" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Maokai.png" alt="Maokai" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Nami" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Nami.png" alt="Nami" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Nidalee" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Nidalee.png" alt="Nidalee" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Tahm" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Tahm.png" alt="Tahm" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Twisted_Fate" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Twisted_Fate.png" alt="Twisted_Fate" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Vayne" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Vayne.png" alt="Vayne" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Wukong" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Wukong.png" alt="Wukong" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Yasuo" onclick="addGoldOne(); traits(this.id)">
+        <a target="_blank">
+          <img src="Yasuo.png" alt="Yasuo" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Annie" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Annie.png" alt="Annie" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Aphelios" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Aphelios.png" alt="Aphelios" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Hecarim" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Hecarim.png" alt="Hecarim" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Janna" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Janna.png" alt="Janna" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Jarvan" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Jarvan.png" alt="Jarvan" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Jax" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Jax.png" alt="Jax" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Lulu" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Lulu.png" alt="Lulu" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Pyke" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Pyke.png" alt="Pyke" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Sylas" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Sylas.png" alt="Sylas" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Teemo" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Teemo.png" alt="Teemo" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Thresh" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Thresh.png" alt="Thresh" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Vi" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Vi.png" alt="Vi" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Zed" onclick="addGoldTwo(); traits(this.id)">
+        <a target="_blank">
+          <img src="Zed.png" alt="Zed" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Akali" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Akali.png" alt="Akali" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Evelynn" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Evelynn.png" alt="Evelynn" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Irelia" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Irelia.png" alt="Irelia" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Jinx" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Jinx.png" alt="Jinx" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Kalista" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Kalista.png" alt="Kalista" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Katarina" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Katarina.png" alt="Katarina" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Kennen" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Kennen.png" alt="Kennen" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Kindred" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Kindred.png" alt="Kindred" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Lux" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Lux.png" alt="Lux" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Nunu" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Nunu.png" alt="Nunu" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Veigar" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Veigar.png" alt="Veigar" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Xin_Zhao" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Xin_Zhao.png" alt="Xin_Zhao" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Yuumi" onclick="addGoldThree(); traits(this.id)">
+        <a target="_blank">
+          <img src="Yuumi.png" alt="Yuumi" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Aatrox" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Aatrox.png" alt="Aatrox" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Ahri" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Ahri.png" alt="Ahri" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Ashe" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Ashe.png" alt="Ashe" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Cassiopeia" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Cassiopeia.png" alt="Cassiopeia" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Jhin" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Jhin.png" alt="Jhin" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Morgana" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Morgana.png" alt="Morgana" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Riven" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Riven.png" alt="Riven" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Sejuani" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Sejuani.png" alt="Sejuani" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Shen" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Shen.png" alt="Shen" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Talon" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Talon.png" alt="Talon" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Warwick" onclick="addGoldFour(); traits(this.id)">
+        <a target="_blank">
+          <img src="Warwick.png" alt="Warwick" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Azir" onclick="addGoldFive(); traits(this.id)">
+        <a target="_blank">
+          <img src="Azir.png" alt="Azir" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Ezreal" onclick="addGoldFive(); traits(this.id)">
+        <a target="_blank">
+          <img src="Ezreal.png" alt="Ezreal" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Kayn" onclick="addGoldFive(); traits(this.id)">
+        <a target="_blank">
+          <img src="Kayn.png" alt="Kayn" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Lee_Sin" onclick="addGoldFive(); traits(this.id)">
+        <a target="_blank">
+          <img src="Lee_Sin.png" alt="Lee_Sin" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Lillia" onclick="addGoldFive(); traits(this.id)">
+        <a target="_blank">
+          <img src="Lillia.png" alt="Lillia" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Sett" onclick="addGoldFive(); traits(this.id)">
+        <a target="_blank">
+          <img src="Sett.png" alt="Sett" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Yone" onclick="addGoldFive(); traits(this.id)">
+        <a target="_blank">
+          <img src="Yone.png" alt="Yone" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Zilean" onclick="addGoldFive(); traits(this.id)">
+        <a target="_blank">
+          <img src="Zilean.png" alt="Zilean" width="600" height="400">
+        </a>
+      </div>
+    </div>
+    
+    <div class="incomeEarned">
+      <h3>Cost
+        <img src="coin.png" alt="coin" width="20" height="20">
+      </h3>
+      <h3 id="money">
+      </h3>
+    </div>
+
+    <div class="traits">
+      <h2 id="trait"></h2>
+    </div>
+    </body>
+    
+    </html>
